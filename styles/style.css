@@ -1,0 +1,76 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+    box-sizing: border-box;  
+    margin: 0;
+    padding: 0;
+}
+  
+button:not([disabled]), summary {
+    cursor: pointer;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    --bg-color: hsl(35, 47%, 68%); 
+}
+
+/***********/
+/* GENERAL */
+/***********/
+body {
+    background-color: var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+video {
+    max-width: 40%;
+    position: absolute;
+    top: 27%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    border-radius: 2em;
+}
+
+.tv {
+    max-width: 50%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 2.5em;
+    bottom: 10%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+button {
+    background: none;
+    border: none;
+    width: 4vw; 
+    height: auto;
+}
+
+ul li button img {
+    max-width: 100%;
+    height: auto;
+}
